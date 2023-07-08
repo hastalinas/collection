@@ -1,0 +1,15 @@
+D:\KERJA\BasicProgramming\Collection\Collection\bin\Debug\net6.0\Collection.exe
+D:\KERJA\BasicProgramming\Collection\Collection\bin\Debug\net6.0\Collection.deps.json
+D:\KERJA\BasicProgramming\Collection\Collection\bin\Debug\net6.0\Collection.runtimeconfig.json
+D:\KERJA\BasicProgramming\Collection\Collection\bin\Debug\net6.0\Collection.dll
+D:\KERJA\BasicProgramming\Collection\Collection\bin\Debug\net6.0\Collection.pdb
+D:\KERJA\BasicProgramming\Collection\Collection\obj\Debug\net6.0\Collection.csproj.AssemblyReference.cache
+D:\KERJA\BasicProgramming\Collection\Collection\obj\Debug\net6.0\Collection.GeneratedMSBuildEditorConfig.editorconfig
+D:\KERJA\BasicProgramming\Collection\Collection\obj\Debug\net6.0\Collection.AssemblyInfoInputs.cache
+D:\KERJA\BasicProgramming\Collection\Collection\obj\Debug\net6.0\Collection.AssemblyInfo.cs
+D:\KERJA\BasicProgramming\Collection\Collection\obj\Debug\net6.0\Collection.csproj.CoreCompileInputs.cache
+D:\KERJA\BasicProgramming\Collection\Collection\obj\Debug\net6.0\Collection.dll
+D:\KERJA\BasicProgramming\Collection\Collection\obj\Debug\net6.0\refint\Collection.dll
+D:\KERJA\BasicProgramming\Collection\Collection\obj\Debug\net6.0\Collection.pdb
+D:\KERJA\BasicProgramming\Collection\Collection\obj\Debug\net6.0\Collection.genruntimeconfig.cache
+D:\KERJA\BasicProgramming\Collection\Collection\obj\Debug\net6.0\ref\Collection.dll
