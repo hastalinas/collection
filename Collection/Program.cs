@@ -1,9 +1,10 @@
 ﻿using System;
-using System.Collections.Concurrent;
+//using System.Collections.Concurrent;
+//using System.Net.NetworkInformation;
 
 // tambah library
 using System.Collections.Generic;
-using System.Net.NetworkInformation;
+
 
 public class Program
 {
@@ -275,7 +276,7 @@ public class Program
         // Memeriksa apakah nilai tertentu ada dalam SortedList menggunakan metode ContainsValue()
         bool containsValue = sortedList.ContainsValue("Z");
         Console.WriteLine();
-        Console.WriteLine("Mencari Nilai dengan ContainsValue())");
+        Console.WriteLine("Mencari Nilai dengan ContainsValue()");
         Console.WriteLine("Apakah nilai 'Z' ada dalam SortedList? " + containsValue);
 
         // Memeriksa apakah kunci tertentu ada dalam SortedList menggunakan metode ContainsKey()
