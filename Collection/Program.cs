@@ -31,7 +31,7 @@ public class Program
         names.Add("Budi"); 
         names.Add("Pakdi"); 
         names.Add("Dedi");
-        Console.WriteLine("--METODE ADD--");
+        Console.WriteLine("Menambah Add()");
         foreach (string name in names)
         {
             Console.WriteLine(name);
@@ -39,7 +39,8 @@ public class Program
 
         // Mengubah elemen list
         names[1] = "Devina";
-        Console.WriteLine("--MENGUBAH--");
+        Console.WriteLine();
+        Console.WriteLine("Mengubah");
         foreach (string name in names)
         {
             Console.WriteLine(name);
@@ -47,7 +48,8 @@ public class Program
 
         // Menyisipkan elemen list
         names.Insert(1, "Irvan");
-        Console.WriteLine("--MENYISIPKAN--");
+        Console.WriteLine();
+        Console.WriteLine("Menyisipkan Insert()");
         foreach (string name in names)
         {
             Console.WriteLine(name);
@@ -55,7 +57,8 @@ public class Program
 
         // Menghapus elemen list
         names.Remove("Dedi");
-        Console.WriteLine("--MENGHAPUS--");
+        Console.WriteLine();
+        Console.WriteLine("Menghapus Remove()");
         foreach (string name in names)
         {
             Console.WriteLine(name);
@@ -63,7 +66,8 @@ public class Program
 
         // Mengihitung jumlah list
         int jumlahElemen = names.Count;
-        Console.WriteLine("--MENGHITUNG--");
+        Console.WriteLine();
+        Console.WriteLine("Mengitung Count");
         foreach (string name in names)
         {
             Console.WriteLine(name);
@@ -71,7 +75,8 @@ public class Program
         Console.WriteLine("Jumlah elemen list adalah : " + jumlahElemen);
 
         // Mengecek apakah elemen tertentu ada dalam list
-        Console.WriteLine("--CEK/CARI--");
+        Console.WriteLine();
+        Console.WriteLine("Cek/Cari Contains()");
         bool namaTidakDitemukan = names.Contains("Sher");
         bool namaDitemukan = names.Contains("Sherin");
         Console.WriteLine("Apakah 'Sher' ada dalam list? " + namaTidakDitemukan);
@@ -90,6 +95,7 @@ public class Program
         students.Add(1, "John");
         students.Add(2, "Gerard");
         students.Add(3, "Plate");
+        Console.WriteLine();
         Console.WriteLine("---ADD---");
         foreach (KeyValuePair<int, string> student in students)
         {
@@ -99,6 +105,7 @@ public class Program
 
         // Menghapus pasangan kunci-nilai dari Dictionary
         students.Remove(1);
+        Console.WriteLine();
         Console.WriteLine("---REMOVE---");
         foreach (KeyValuePair<int, string> student in students)
         {
@@ -107,10 +114,14 @@ public class Program
 
         // Menghitung 
         int jumlahDictionary = students.Count;
+        Console.WriteLine();
+        Console.WriteLine("--COUNT--");
         Console.WriteLine("Jumlah Dictionary :" + jumlahDictionary);
 
         // Memeriksa apakah kunci tertentu ada dalam Dictionary
         bool containsKey1 = students.ContainsKey(1);
+        Console.WriteLine();
+        Console.WriteLine("--CONTAINS---");
         Console.WriteLine("Apakah key '1' ada dalam Dictionary? " + containsKey1);
 
         // Memeriksa apakah nilai tertentu ada dalam Dictionary menggunakan metode ContainsValue()
@@ -118,6 +129,8 @@ public class Program
         Console.WriteLine("Apakah value 'Gerard' ada dalam Dictionary? " + containsValueGerard);
 
         // Menghapus semua pasangan kunci-nilai dari Dictionary menggunakan metode Clear()
+        Console.WriteLine();
+        Console.WriteLine("--CLEAR--");
         students.Clear();
 
         // Menghitung jumlah pasangan kunci-nilai dalam Dictionary
@@ -137,6 +150,7 @@ public class Program
         queue.Enqueue("Dua");
         queue.Enqueue("Tiga");
         queue.Enqueue("Empat");
+        Console.WriteLine("--Enqueue()--");
         foreach (string item in queue)
         {
             Console.WriteLine(item);
@@ -145,6 +159,7 @@ public class Program
         // Mengambil elemen yang berada di depan antrian menggunakan metode Dequeue()
         string item1 = queue.Dequeue();
         Console.WriteLine();
+        Console.WriteLine("--Dequeue()--");
         Console.WriteLine("Elemen yang dihapus: " + item1);
         foreach (string item in queue)
         {
@@ -154,6 +169,7 @@ public class Program
         // Mengembalikan elemen yang berada di depan Queue tanpa menghapusnya menggunakan metode Peek()
         string frontItem = queue.Peek();
         Console.WriteLine();
+        Console.WriteLine("--Peek()--");
         Console.WriteLine("Elemen yang ada di depan : " + frontItem);
         foreach (string item in queue)
         {
@@ -163,17 +179,20 @@ public class Program
         // Memeriksa apakah elemen tertentu ada dalam Queue.
         bool containsItem = queue.Contains("Dua");
         Console.WriteLine();
+        Console.WriteLine("--Contains()--");
         Console.WriteLine("Apakah 'Dua' ada dalam antrian? " + containsItem);
 
         // Menghitung jumlah elemen dalam Queue menggunakan properti Count
         int jumlahElemen = queue.Count;
         Console.WriteLine();
+        Console.WriteLine("--Count--");
         Console.WriteLine("Jumlah elemen dalam antrian: " + jumlahElemen);
 
         queue.Clear();
         int jumlahElemenClear = queue.Count;
         Console.WriteLine();
-        Console.WriteLine("Jumlah elemen dalam antrian: " + jumlahElemenClear);
+        Console.WriteLine("--Clear()--");
+        Console.WriteLine("Jumlah elemen dalam antrian setelah dilakukan Clear: " + jumlahElemenClear);
 
     }
     // Stack
@@ -187,6 +206,7 @@ public class Program
         stack.Push("Elemen Ke-1");
         stack.Push("Elemen Ke-2");
         stack.Push("Elemen Ke-3");
+        Console.WriteLine("--Push()--");
         foreach (string item in stack)
         {
             Console.WriteLine(item);
@@ -195,6 +215,7 @@ public class Program
         // Menghapus dan mengembalikan elemen teratas dari Stack menggunakan metode Pop()
         string item1 = stack.Pop();
         Console.WriteLine();
+        Console.WriteLine("--Pop()--");
         Console.WriteLine("Elemen yang dihapus: " + item1);
         foreach (string item in stack)
         {
@@ -204,6 +225,7 @@ public class Program
         // Mengembalikan elemen teratas dari Stack tanpa menghapusnya menggunakan metode Peek()
         string topItem = stack.Peek();
         Console.WriteLine();
+        Console.WriteLine("--Peek()--");
         Console.WriteLine("Elemen teratas Stack: " + topItem);
         foreach (string item in stack)
         {
@@ -213,6 +235,7 @@ public class Program
         // Menghitung jumlah elemen dalam Stack menggunakan properti Count
         int jumlahElemen = stack.Count;
         Console.WriteLine();
+        Console.WriteLine("--Count--");
         Console.WriteLine("Jumlah elemen dalam Stack: " + jumlahElemen);
     }
 
