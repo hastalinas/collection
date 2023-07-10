@@ -90,17 +90,21 @@ public class Program
     {
         Console.WriteLine("CONTOH DICTIONARY");
         // Deklarasi dan inisialisasi Dictionary
-        Dictionary<int, string> students = new Dictionary<int, string>();
+        Dictionary<int, Employee> students = new Dictionary<int, Employee>();
+
+        Employee employee1 = new Employee();
+        employee1.FirstName = "John";
+        employee1.LastName = "Jone";
 
         // Menambahkan pasangan kunci-nilai ke Dictionary
-        students.Add(1, "John");
-        students.Add(2, "Gerard");
-        students.Add(3, "Plate");
+        students.Add(1, employee1);
+        students.Add(2, employee1);
+        students.Add(3, employee1);
         Console.WriteLine();
         Console.WriteLine("---ADD---");
-        foreach (KeyValuePair<int, string> student in students)
+        foreach (KeyValuePair<int, Employee> student in students)
         {
-            Console.WriteLine("Student ID: " + student.Key + ", Name: " + student.Value);
+            Console.WriteLine("Student ID: " + student.Key + ", Name: " + student.Value.FirstName + student.Value.LastName);
         }
 
 
@@ -108,7 +112,7 @@ public class Program
         students.Remove(1);
         Console.WriteLine();
         Console.WriteLine("---REMOVE---");
-        foreach (KeyValuePair<int, string> student in students)
+        foreach (var student in students) //bisa pakai var
         {
             Console.WriteLine("Student ID: " + student.Key + ", Name: " + student.Value);
         }
@@ -126,8 +130,8 @@ public class Program
         Console.WriteLine("Apakah key '1' ada dalam Dictionary? " + containsKey1);
 
         // Memeriksa apakah nilai tertentu ada dalam Dictionary menggunakan metode ContainsValue()
-        bool containsValueGerard = students.ContainsValue("Gerard");
-        Console.WriteLine("Apakah value 'Gerard' ada dalam Dictionary? " + containsValueGerard);
+       // bool containsValueGerard = students.ContainsValue("Gerard");
+        //Console.WriteLine("Apakah value 'Gerard' ada dalam Dictionary? " + containsValueGerard);
 
         // Menghapus semua pasangan kunci-nilai dari Dictionary menggunakan metode Clear()
         Console.WriteLine();
@@ -288,6 +292,7 @@ public class Program
     }
 
 
+
     public static void Main(string[] args)
     {
         bool exit = false;
@@ -330,4 +335,10 @@ public class Program
         }        
     }
 
+}
+
+class Employee
+{
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
 }
